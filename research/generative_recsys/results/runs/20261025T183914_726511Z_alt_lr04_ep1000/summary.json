@@ -1,0 +1,25 @@
+{
+  "name": "alt_lr04_ep1000",
+  "device": "cuda",
+  "smoke": false,
+  "input_sha256": "87ae968e0f58d8400927062e8b54d08fe3710aa7c3a891375e102422f2053bba",
+  "optimization": "alternating",
+  "optimizer": "adagrad",
+  "lr": 0.4,
+  "epochs": 1000,
+  "steps": 15000,
+  "seed": 42,
+  "batch_size": 1024,
+  "reconstruction": 0.13774604224565318,
+  "gain_vs_mean": -0.0003151823776446072,
+  "used_codes": [
+    1,
+    1,
+    1
+  ],
+  "effective_codes": [
+    1.0,
+    1.0,
+    1.0
+  ]
+}

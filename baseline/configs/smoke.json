@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "sample_users": 1000,
+  "train_weeks": 2,
+  "horizon_days": 7,
+  "popular_candidates": 100,
+  "genre_candidates": 30,
+  "windows": [7, 30, 90],
+  "iterations": 150,
+  "depth": 6,
+  "learning_rate": 0.05,
+  "thread_count": 4
+}

@@ -1,0 +1,100 @@
+{
+  "archived_checks": [
+    {
+      "from": "research/generative_recsys/artifacts/20261025T172637_566242Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T172637_566242Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/20261025T172714_986287Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T172714_986287Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/20261025T173159_204406Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T173159_204406Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/20261025T180438_245660Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T180438_245660Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/20261025T180509_074772Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T180509_074772Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/20261025T180612_040749Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T180612_040749Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/20261025T190415_885564Z",
+      "to": "research/generative_recsys/artifacts/archive_checks/20261025T190415_885564Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/cpu_real_smoke",
+      "to": "research/generative_recsys/artifacts/archive_checks/cpu_real_smoke",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/full_smoke_dependency_probe",
+      "to": "research/generative_recsys/artifacts/archive_checks/full_smoke_dependency_probe",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/prepare_real_smoke",
+      "to": "research/generative_recsys/artifacts/archive_checks/prepare_real_smoke",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/prepare_smoke",
+      "to": "research/generative_recsys/artifacts/archive_checks/prepare_smoke",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_final_smoke",
+      "to": "research/generative_recsys/artifacts/archive_checks/rqvae_final_smoke",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_real_cpu_check",
+      "to": "research/generative_recsys/artifacts/archive_checks/rqvae_real_cpu_check",
+      "reason": "limited_steps"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_synthetic_smoke",
+      "to": "research/generative_recsys/artifacts/archive_checks/rqvae_synthetic_smoke",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_only/20261025T182534_835810Z",
+      "to": "research/generative_recsys/artifacts/rqvae_only/archive_checks/20261025T182534_835810Z",
+      "reason": "smoke"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_only/20261025T182607_657755Z",
+      "to": "research/generative_recsys/artifacts/rqvae_only/archive_checks/20261025T182607_657755Z",
+      "reason": "limited_steps"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_only/20261025T183259_945884Z",
+      "to": "research/generative_recsys/artifacts/rqvae_only/archive_checks/20261025T183259_945884Z",
+      "reason": "limited_steps"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_only/20261025T183819_000237Z_cpu_check_lr003",
+      "to": "research/generative_recsys/artifacts/rqvae_only/archive_checks/20261025T183819_000237Z_cpu_check_lr003",
+      "reason": "limited_steps"
+    },
+    {
+      "from": "research/generative_recsys/artifacts/rqvae_only/20261025T185838_258987Z_affine_cpu_check",
+      "to": "research/generative_recsys/artifacts/rqvae_only/archive_checks/20261025T185838_258987Z_affine_cpu_check",
+      "reason": "limited_steps"
+    }
+  ],
+  "note": "Checks archived locally, no full runs, models or pretrained weights deleted."
+}

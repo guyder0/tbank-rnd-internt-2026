@@ -1,0 +1,131 @@
+{
+  "source": {
+    "synthetic": false,
+    "archive_sha256": "50fc5b7db78cbda4c3d0ee5bb5bea4c416cff41e8af58aab0b661d0d3e9dfa9b",
+    "items_sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+    "sample_users_sha256": "d15e34002369e1197cfddfc654e4a25fb7f03c6fd23bde06cce290ff25deb6df",
+    "selected_users": 30000
+  },
+  "embedding": {
+    "backend": "tfidf_svd"
+  },
+  "texts_sha256": "c6d1b4edcb2c9f30e8fd3cb4163c05e522001ab0882f19e6132b44f1a989532a",
+  "config": {
+    "seed": 42,
+    "embedding_backend": "tfidf",
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "embedding_revision": "main",
+    "embedding_dim": 96,
+    "code_width": 64,
+    "code_levels": 3,
+    "kmeans_iterations": 25,
+    "random_codes": false,
+    "d_model": 128,
+    "heads": 4,
+    "layers": 2,
+    "dropout": 0.1,
+    "max_history": 128,
+    "batch_size": 64,
+    "epochs": 30,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "patience": 5,
+    "beam_width": 64,
+    "top_k": 10,
+    "threads": 4,
+    "tokenizer": "rqvae",
+    "rqvae_hidden": [
+      512,
+      256,
+      128
+    ],
+    "rqvae_latent_dim": 32,
+    "rqvae_beta": 0.25,
+    "rqvae_batch_size": 1024,
+    "rqvae_epochs": 500,
+    "rqvae_optimizer": "adagrad",
+    "rqvae_learning_rate": 0.05,
+    "rqvae_max_steps": null
+  },
+  "embeddings_sha256": "ff5cdae079b2c99e72d0ab233a553675f1a138b005f4d9eeae607ab847b991ec",
+  "prepared_sha256": "c7f576a0b889d48e6c5c844d4a36a4c5a903439c60631d70741b47b5d3659e8d",
+  "catalog_size": 14947,
+  "catalog_policy": "fixed closed catalog observed before earliest train cutoff; out-of-catalog positives retained in evaluation truth",
+  "diagnostics": {
+    "algorithm": "rqvae",
+    "settings": {
+      "input_dim": 96,
+      "hidden": [
+        512,
+        256,
+        128
+      ],
+      "latent_dim": 32,
+      "levels": 3,
+      "width": 64,
+      "beta": 0.25
+    },
+    "steps": 7500,
+    "epochs": 500,
+    "initial_reconstruction": 1.0212768860275454,
+    "final_reconstruction": 0.5136060388365613,
+    "usage": [
+      {
+        "centers": 64,
+        "used": 27
+      },
+      {
+        "centers": 64,
+        "used": 64
+      },
+      {
+        "centers": 64,
+        "used": 64
+      }
+    ],
+    "initial_usage": [
+      64,
+      64,
+      64
+    ],
+    "checkpoint_reload": true,
+    "elapsed_seconds": 37.80586199200479,
+    "limited_steps": false,
+    "selection": "final epoch; no recommendation labels used",
+    "unique_before_suffix": 9818,
+    "items": 14947,
+    "max_collision_bucket": 88,
+    "random_codes": false
+  },
+  "prepare_seconds": 53.29087587102549,
+  "splits": [
+    {
+      "name": "train",
+      "cutoff": "2021-07-19",
+      "max_history_date": "2021-07-18 00:00:00",
+      "queries": 2704,
+      "positives": 7107
+    },
+    {
+      "name": "train",
+      "cutoff": "2021-07-26",
+      "max_history_date": "2021-07-25 00:00:00",
+      "queries": 2886,
+      "positives": 7684
+    },
+    {
+      "name": "train",
+      "cutoff": "2021-08-02",
+      "max_history_date": "2021-08-01 00:00:00",
+      "queries": 3042,
+      "positives": 8553
+    },
+    {
+      "name": "validation",
+      "cutoff": "2021-08-09",
+      "max_history_date": "2021-08-08 00:00:00",
+      "queries": 3328,
+      "positives": 9083
+    }
+  ]
+}

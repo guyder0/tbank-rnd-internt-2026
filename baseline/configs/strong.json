@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "holdout_seed": 20261023,
+  "holdout_users": 30000,
+  "neighbors": 150,
+  "minimum_support": 3,
+  "similarity_shrinkage": 10,
+  "graph_history_limit": 100,
+  "co_candidates": 100,
+  "fresh_candidates": 40,
+  "cohort_candidates": 30,
+  "iterations": 850,
+  "depth": 6,
+  "learning_rate": 0.04,
+  "l2_leaf_reg": 8,
+  "thread_count": 4,
+  "feature_batch_users": 500
+}

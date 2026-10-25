@@ -1,0 +1,4 @@
+# Install in baseline/.venv only; reuse the existing CPU/CUDA PyTorch wheel.
+sentence-transformers>=3.4,<4
+transformers>=4.51,<5
+sentencepiece>=0.2,<0.3

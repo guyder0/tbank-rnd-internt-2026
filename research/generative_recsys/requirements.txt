@@ -1,0 +1,6 @@
+# Baseline dependencies are reused from baseline/.venv.
+# Select a PyTorch CPU/CUDA wheel explicitly; see RUNNING.md.
+torch==2.7.1
+# Default Sentence-T5: additionally install requirements-sentence-t5.txt.
+# Optional for --embedding-backend e5; offline --smoke does not import it.
+# transformers>=4.51,<5

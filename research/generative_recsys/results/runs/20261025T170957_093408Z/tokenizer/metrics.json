@@ -1,0 +1,42 @@
+{
+  "algorithm": "rqvae",
+  "settings": {
+    "input_dim": 96,
+    "hidden": [
+      512,
+      256,
+      128
+    ],
+    "latent_dim": 32,
+    "levels": 3,
+    "width": 64,
+    "beta": 0.25
+  },
+  "steps": 7500,
+  "epochs": 500,
+  "initial_reconstruction": 1.0212768860275454,
+  "final_reconstruction": 0.5136060388365613,
+  "usage": [
+    {
+      "centers": 64,
+      "used": 27
+    },
+    {
+      "centers": 64,
+      "used": 64
+    },
+    {
+      "centers": 64,
+      "used": 64
+    }
+  ],
+  "initial_usage": [
+    64,
+    64,
+    64
+  ],
+  "checkpoint_reload": true,
+  "elapsed_seconds": 37.80586199200479,
+  "limited_steps": false,
+  "selection": "final epoch; no recommendation labels used"
+}

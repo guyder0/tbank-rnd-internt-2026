@@ -1,0 +1,59 @@
+{
+  "best_epoch": 3,
+  "best_ndcg@10": 0.1359263776369972,
+  "validation": {
+    "popularity": {
+      "ndcg@10": 0.12330119107589019,
+      "recall@10": 0.18896926477376677,
+      "map@10": 0.08362937885991738,
+      "candidate_recall": 0.18896926477376677,
+      "users": 3328
+    },
+    "popularity_catalog": {
+      "ndcg@10": 0.12455395911460296,
+      "recall@10": 0.19272009417596095,
+      "map@10": 0.08421353753117611,
+      "candidate_recall": 0.19272009417596095,
+      "users": 3328
+    },
+    "sid": {
+      "ndcg@10": 0.1359263776369972,
+      "recall@10": 0.20333253833543413,
+      "map@10": 0.09527529511125588,
+      "candidate_recall": 0.20333253833543413,
+      "users": 3328
+    }
+  },
+  "delta_vs_popularity": {
+    "ndcg_delta": 0.012625186561107008,
+    "ci95": [
+      0.008182012417411434,
+      0.016888302795700798
+    ]
+  },
+  "catalog_recall_ceiling": 0.8779338562680434,
+  "training_pairs": 22153,
+  "training_queries": 8398,
+  "train_seconds": 484.9096618180047,
+  "parameters": 986986,
+  "search_checks": {
+    "checkpoint_reload": true
+  },
+  "short_list_users": 0,
+  "device": "cuda",
+  "smoke": false,
+  "peak_cuda_mib": 1217.6181640625,
+  "catboost_reference": {
+    "source": "baseline/artifacts/strong/expanded/validation_catboost_per_user.csv",
+    "sha256": "3d6505c795ac60170c72951539de1c5dacec455812b7231be425b759992ca1fd",
+    "ndcg@10": 0.1604144619862643,
+    "recall@10": 0.2336077422293945,
+    "map@10": 0.11350621846238941,
+    "comparison": "whole pipelines: CatBoost uses expanded candidate retrieval; SID generates over fixed earliest-cutoff catalog",
+    "ndcg_delta": -0.02448808434926708,
+    "ci95": [
+      -0.02932441194383451,
+      -0.019652376487635626
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source": "KION_DATASET/data_original.zip",
+  "meaning": "One row per user-item, last observed date, not session events",
+  "interactions": 5476251,
+  "items_in_metadata": 15963,
+  "cutoffs": [
+    {
+      "cutoff": "2021-07-19",
+      "history_rows": 3560245,
+      "users_with_history": 695170,
+      "history_length_quantiles": {
+        "0.5": 2.0,
+        "0.9": 12.0,
+        "0.95": 18.0,
+        "0.99": 43.0
+      },
+      "users_more_than_128": 398,
+      "events_in_tied_user_days_fraction": 0.5379969636921055
+    },
+    {
+      "cutoff": "2021-07-26",
+      "history_rows": 3892558,
+      "users_with_history": 742256,
+      "history_length_quantiles": {
+        "0.5": 2.0,
+        "0.9": 12.0,
+        "0.95": 19.0,
+        "0.99": 44.0
+      },
+      "users_more_than_128": 459,
+      "events_in_tied_user_days_fraction": 0.5407400480609409
+    },
+    {
+      "cutoff": "2021-08-02",
+      "history_rows": 4266013,
+      "users_with_history": 797423,
+      "history_length_quantiles": {
+        "0.5": 2.0,
+        "0.9": 12.0,
+        "0.95": 19.0,
+        "0.99": 45.0
+      },
+      "users_more_than_128": 518,
+      "events_in_tied_user_days_fraction": 0.5435888263819167
+    },
+    {
+      "cutoff": "2021-08-09",
+      "history_rows": 4649162,
+      "users_with_history": 850489,
+      "history_length_quantiles": {
+        "0.5": 2.0,
+        "0.9": 13.0,
+        "0.95": 20.0,
+        "0.99": 46.0
+      },
+      "users_more_than_128": 588,
+      "events_in_tied_user_days_fraction": 0.5464311632935139
+    }
+  ]
+}

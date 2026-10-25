@@ -1,0 +1,142 @@
+{
+  "source": {
+    "synthetic": false,
+    "archive_sha256": "50fc5b7db78cbda4c3d0ee5bb5bea4c416cff41e8af58aab0b661d0d3e9dfa9b",
+    "items_sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+    "sample_users_sha256": "d15e34002369e1197cfddfc654e4a25fb7f03c6fd23bde06cce290ff25deb6df",
+    "selected_users": 30000
+  },
+  "embedding": {
+    "backend": "sentence_t5",
+    "model": "sentence-transformers/sentence-t5-base",
+    "requested_revision": "main",
+    "resolved_revision": "fc5d4628481afbbaaacd7af6bb07cf9d3865f781",
+    "dimensions": 768,
+    "max_length": 256,
+    "batch_size": 16,
+    "normalized": true,
+    "pipeline": "SentenceTransformer(\n  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False}) with Transformer model: T5EncoderModel \n  (1): Pooling({'word_embedding_dimension': 768, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})\n  (2): Dense({'in_features': 768, 'out_features': 768, 'bias': False, 'activation_function': 'torch.nn.modules.linear.Identity'})\n  (3): Normalize()\n)",
+    "language_note": "Checkpoint is tagged English; KION metadata is Russian"
+  },
+  "texts_sha256": "c6d1b4edcb2c9f30e8fd3cb4163c05e522001ab0882f19e6132b44f1a989532a",
+  "config": {
+    "seed": 42,
+    "embedding_backend": "sentence_t5",
+    "embedding_model": "sentence-transformers/sentence-t5-base",
+    "embedding_revision": "main",
+    "embedding_dim": 768,
+    "embedding_batch_size": 16,
+    "embedding_max_length": 256,
+    "code_width": 64,
+    "code_levels": 3,
+    "kmeans_iterations": 25,
+    "random_codes": false,
+    "d_model": 128,
+    "heads": 4,
+    "layers": 2,
+    "dropout": 0.1,
+    "max_history": 128,
+    "batch_size": 64,
+    "epochs": 30,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "patience": 5,
+    "beam_width": 64,
+    "top_k": 10,
+    "threads": 4,
+    "tokenizer": "rqvae",
+    "rqvae_hidden": [
+      512,
+      256,
+      128
+    ],
+    "rqvae_latent_dim": 32,
+    "rqvae_beta": 0.25,
+    "rqvae_batch_size": 1024,
+    "rqvae_epochs": 500,
+    "rqvae_optimizer": "adagrad",
+    "rqvae_learning_rate": 0.05,
+    "rqvae_max_steps": null
+  },
+  "embeddings_sha256": "1bfec7415918ff38ae9bc7cb5003c85c9c4ffc8e905c50e2a0ddc5ebc10070bc",
+  "prepared_sha256": "37558e3b5ce47635c9fc4d0ede104b8473818e4e59ecabcb97c9a070f24a2848",
+  "catalog_size": 14947,
+  "catalog_policy": "fixed closed catalog observed before earliest train cutoff; out-of-catalog positives retained in evaluation truth",
+  "diagnostics": {
+    "algorithm": "rqvae",
+    "settings": {
+      "input_dim": 768,
+      "hidden": [
+        512,
+        256,
+        128
+      ],
+      "latent_dim": 32,
+      "levels": 3,
+      "width": 64,
+      "beta": 0.25
+    },
+    "steps": 7500,
+    "epochs": 500,
+    "initial_reconstruction": 1.874829019368943,
+    "final_reconstruction": 0.02760200311579401,
+    "usage": [
+      {
+        "centers": 64,
+        "used": 1
+      },
+      {
+        "centers": 64,
+        "used": 60
+      },
+      {
+        "centers": 64,
+        "used": 62
+      }
+    ],
+    "initial_usage": [
+      64,
+      64,
+      64
+    ],
+    "checkpoint_reload": true,
+    "elapsed_seconds": 47.845372974989004,
+    "limited_steps": false,
+    "selection": "final epoch; no recommendation labels used",
+    "unique_before_suffix": 1322,
+    "items": 14947,
+    "max_collision_bucket": 333,
+    "random_codes": false
+  },
+  "prepare_seconds": 194.13924487301847,
+  "splits": [
+    {
+      "name": "train",
+      "cutoff": "2021-07-19",
+      "max_history_date": "2021-07-18 00:00:00",
+      "queries": 2704,
+      "positives": 7107
+    },
+    {
+      "name": "train",
+      "cutoff": "2021-07-26",
+      "max_history_date": "2021-07-25 00:00:00",
+      "queries": 2886,
+      "positives": 7684
+    },
+    {
+      "name": "train",
+      "cutoff": "2021-08-02",
+      "max_history_date": "2021-08-01 00:00:00",
+      "queries": 3042,
+      "positives": 8553
+    },
+    {
+      "name": "validation",
+      "cutoff": "2021-08-09",
+      "max_history_date": "2021-08-08 00:00:00",
+      "queries": 3328,
+      "positives": 9083
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "/home/guyder/Проекты/tbank-rnd/research/generative_recsys/artifacts/20261025T180753_899640Z/item_embeddings.npy",
+  "sha256": "87ae968e0f58d8400927062e8b54d08fe3710aa7c3a891375e102422f2053bba",
+  "embedding": {
+    "backend": "e5",
+    "model": "intfloat/multilingual-e5-base",
+    "requested_revision": "main",
+    "resolved_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "dimensions": 768,
+    "max_length": 256,
+    "batch_size": 16,
+    "prefix": "query: ",
+    "pooling": "attention-mask mean",
+    "normalized": true
+  },
+  "shape": [
+    14947,
+    768
+  ],
+  "sampled": false,
+  "diagnostics": "same catalog used for training; not held-out generalization"
+}
